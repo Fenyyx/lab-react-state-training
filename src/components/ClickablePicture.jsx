@@ -16,7 +16,7 @@ const ClickablePicture = () => {
     //Creamos el div con la imagen y la función que la intercambia
  <div>
 <img
-src={toggle ? `src/assets/images/maxence.png` : `src/assets/images/maxence-glasses.png`}
+src={!toggle ? `src/assets/images/maxence.png` : `src/assets/images/maxence-glasses.png`} // Si toggle es no entonces 1º imagen, si es si 2º imagen
 alt="Clickable"
 onClick={click}
 />
